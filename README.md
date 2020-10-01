@@ -1,6 +1,6 @@
-## Available Scripts
+## Simple react calculator
 
-In the project directory, you can run:
+React calculator made with semantic-ui-react
 
 ### Operations
 
@@ -18,11 +18,10 @@ In the project directory, you can run:
 
 ### Screenshots
 
-![GitHub Logo](./public/1.png)
+![1st](./public/1.png)
 
-![GitHub Logo](./public/2.png)
+![2nd](./public/2.png)
 
-![GitHub Logo](./public/3.png)
 
 
 
