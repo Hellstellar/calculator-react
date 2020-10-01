@@ -17,14 +17,14 @@ class Calculator extends Component {
         }
     }
 
-    applyOperation = event => {
+    applyOperation = id => {
         let { result, inputOne, inputTwo } = this.state
         const [isValid, a, b] = this.validate(inputOne, inputTwo);
         
         if(isValid) {
             this.setState({errorOne : ''})
             this.setState({errorTwo : ''})
-            switch(event.target.id) {
+            switch(id) {
                 case 'plus' : 
                     result = a + b;
                     break;
@@ -38,6 +38,7 @@ class Calculator extends Component {
                     result = a / b;
                     break;    
             }
+            console.log(result)
             this.setState({ result })
         }
     }
