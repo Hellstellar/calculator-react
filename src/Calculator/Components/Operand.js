@@ -2,7 +2,6 @@ import React from 'react';
 import { Input, Form, Label, Grid } from 'semantic-ui-react';
 
 const Operand = ({ id, error, value, label, inputChange }) => {
-	console.log(value)
 	return (
 		<Form.Field inline>
 			<Input size='huge' id = {id} value = {value} label={label} onChange={inputChange} />

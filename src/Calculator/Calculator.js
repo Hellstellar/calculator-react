@@ -59,11 +59,11 @@ class Calculator extends Component {
         //Is a number validation
         if(isNaN(inputOne)) {
             isValid = false
-            this.setState({errorOne : 'A calculator expects a number'})
+            this.setState({errorOne : 'Number expected!'})
         }
         if(isNaN(inputTwo)) {
             isValid = false
-            this.setState({errorTwo : 'A calculator expects a number'})
+            this.setState({errorTwo : 'Number expected!'})
         }
 
         return [isValid, inputOne, inputTwo]
@@ -77,7 +77,6 @@ class Calculator extends Component {
     }
 
     clearInput = () => {
-        console.log('clear')
         this.setState({ inputOne : ''});
         this.setState({ inputTwo : ''});
         this.setState({ result : ''});
